@@ -4,6 +4,8 @@
 
 Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
 
+> Originally forked from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) and now maintained independently by [Adam Rafeek](https://github.com/arafeek) at [arafeek/agent-skills](https://github.com/arafeek/agent-skills).
+
 ```
   DEFINE          PLAN           BUILD          VERIFY         REVIEW          SHIP
  ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
@@ -41,20 +43,20 @@ Skills also activate automatically based on what you're doing — designing an A
 **Marketplace install:**
 
 ```
-/plugin marketplace add addyosmani/agent-skills
-/plugin install agent-skills@addy-agent-skills
+/plugin marketplace add arafeek/agent-skills
+/plugin install agent-skills@arafeek-agent-skills
 ```
 
 > **SSH errors?** The marketplace clones repos via SSH. If you don't have SSH keys set up on GitHub, either [add your SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) or use the full HTTPS URL to force the HTTPS cloning:
 > ```bash
-> /plugin marketplace add https://github.com/addyosmani/agent-skills.git
-> /plugin install agent-skills@addy-agent-skills
+> /plugin marketplace add https://github.com/arafeek/agent-skills.git
+> /plugin install agent-skills@arafeek-agent-skills
 > ```
 
 **Local / development:**
 
 ```bash
-git clone https://github.com/addyosmani/agent-skills.git
+git clone https://github.com/arafeek/agent-skills.git
 claude --plugin-dir /path/to/agent-skills
 ```
 
@@ -75,7 +77,7 @@ Install as native skills for auto-discovery, or add to `GEMINI.md` for persisten
 **Install from the repo:**
 
 ```bash
-gemini skills install https://github.com/addyosmani/agent-skills.git --path skills
+gemini skills install https://github.com/arafeek/agent-skills.git --path skills
 ```
 
 **Install from a local clone:**
